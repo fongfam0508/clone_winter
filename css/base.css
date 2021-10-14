@@ -2,7 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --primary-color: #3dd0d4;
-    --text-color: #212121;
+    --text-color: #505050;
 
 }
 
@@ -14,15 +14,66 @@
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 .grid {
-    width: 1200px;
     max-width: 100%;
-    margin: 0 auto;
+    padding: 0;
 }
 
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.grid_row-0px {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.grid_row-20px {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.grid_column-3 {
+    width: 33.3333333%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.grid_column-3-0px {
+    width: 33.3333333%;
+}
+
+.grid_column-4 {
+    max-width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.grid_column-4-0px {
+    max-width: 25%;
+}
+
+.grid_column-5 {
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.grid_wide {
+    max-width: 1330px;
+    margin: 0 auto;
+}
 /* Animation */
 @keyframes scrolldown {
     from {
@@ -68,15 +119,9 @@ html {
     height: 0%;
     animation: scrolldown 300ms ease-in-out forwards;
     transform-origin: top center;
-    box-shadow: 0 2px 2px var(--text-color);
+    box-shadow: 5px 8px 13.92px 2.08px rgb(0 0 0 / 5%);
 }
-/* 
- */
 
-
-
-
- /*  */
 .heading-item__menu::before {
     z-index: 1;
     background-color: red;
